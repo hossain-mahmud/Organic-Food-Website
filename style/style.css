@@ -453,6 +453,44 @@ body {
     .container {
         width: 100%;
     }
+     #manu_section {
+        width: 100%;
+        height: 80px;
+        padding: 0px 10px;
+    }
+
+    .manu_bar .fa-bars {
+        display: block;
+        line-height: 80px;
+        text-align: right;
+        color: #2f3542;
+    }
+
+    .nav_item {
+        position: absolute;
+        width: 100%;
+        background: #2f3542;
+        display: none;
+    }
+
+    .nav_item nav ul {
+        float: none;
+    }
+
+    .nav_item nav ul li {
+        float: none;
+        text-align: center;
+    }
+
+    .nav_item nav ul li a {
+        color: #fff;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .active {
+        display: block;
+    }
 
     #banner .banner .banner_item {
         grid-template-columns: repeat(1, 1fr);
@@ -544,43 +582,9 @@ body {
         row-gap: 20px;
     }
 
-    #manu_section {
-        width: 100%;
-        height: 80px;
-        padding: 0px 10px;
-    }
-
-    .manu_bar .fa-bars {
-        display: block;
-        line-height: 80px;
-        text-align: right;
-        color: #2f3542;
-    }
-
-    .nav_item {
-        position: absolute;
-        width: 100%;
-        background: #2f3542;
-        display: none;
-    }
-
-    .nav_item nav ul {
-        float: none;
-    }
-
-    .nav_item nav ul li {
-        float: none;
-        text-align: center;
-    }
-
-    .nav_item nav ul li a {
-        color: #fff;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .active {
-        display: block;
+    .footer_manu ul li {
+    float: left;
+    margin: 10px;
     }
 }
 
