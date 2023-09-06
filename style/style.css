@@ -1,0 +1,587 @@
+/* ================ fonts part start================ */
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+/* ------------------- fonts parts end ----------------- */
+/* =================== Basic css part start ============= */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1145px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+/* ------------------- Basic parts end ----------------- */
+/* =============== main manu part start ================== */
+#manu_section {
+    width: 100%;
+    height: 100px;
+    background: #E3EFFB;
+    border-bottom: 2px solid #61A734;
+    padding: 0px 120px;
+}
+
+.manu_bar .logo img {
+    width: 250px;
+    float: left;
+}
+
+.nav_item nav ul {
+    float: right;
+}
+
+.nav_item nav ul li {
+    float: left;
+}
+
+.nav_item nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 22px;
+    line-height: 100px;
+    font-size: 25px;
+    color: #2f3542;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav_item nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #61A734;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    transition: all linear .5s;
+}
+
+.nav_item nav ul li a:hover::after {
+    width: 100%;
+}
+
+.manu_bar .fa-bars {
+    font-size: 30px;
+    line-height: 100px;
+    display: none;
+}
+
+/* ------------------ main manu part end ------------------- */
+/* ====================== Banner Part start ================= */
+.banner {
+    width: 100%;
+    background: url(../images/bg1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner .banner .banner_item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.banner_item .text {
+    padding: 200px 50px 50px 150px;
+    text-align: 0;
+}
+
+.banner_item .text h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #61A734;
+    font-weight: 800;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.banner_item .text_h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #2f3542;
+    letter-spacing: 4px;
+}
+
+.banner_item .text p {
+    text-align: justify;
+    font-size: 20px;
+    color: #2f3542;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.banner_item .text p::selection {
+    background-color: #61A734;
+    color: white;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #61A734;
+    transition: all linear .5s;
+}
+
+.button:hover {
+    background-color: #39850b;
+}
+
+.banner_img img {
+    width: 100%;
+}
+
+/* ------------------- Basic parts end ----------------- */
+/* ================= works section start=============== */
+#Works_section {
+    background-color: #61A734;
+    padding: 100px;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.work img {
+    width: 100%;
+}
+
+.work .texts {
+    grid-column: 1/-1;
+    text-align: center;
+}
+
+.work .texts h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.work .texts p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+.work .card_size {
+    margin: 5px;
+}
+
+.work .white_card {
+    background: #fff;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.work .white_card i {
+    font-size: 35px;
+    color: #61A734;
+}
+
+.work .white_card h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.work .white_card p {
+    margin-top: 10px;
+    color: #2f3542;
+    font-size: 18px;
+}
+
+/* ------------------- work parts end ----------------- */
+/* ===================== farm part start =================== */
+.farm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.farm img {
+    width: 100%;
+}
+
+.farm_texts {
+    padding: 150px 100px;
+}
+
+.farm_texts h1 {
+    font-size: 40px;
+    line-height: 40px;
+    color: #61A734;
+    margin-bottom: 20px;
+}
+
+.farm_titel {
+    color: orange;
+    letter-spacing: 5px;
+}
+
+.farm_texts p {
+    text-align: justify;
+    font-size: 20px;
+    color: #2f3542;
+    margin-bottom: 30px;
+}
+
+.button_two {
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: orange;
+    transition: all linear .5s;
+}
+
+/* ------------------- farm parts end ----------------- */
+/* ====================== about part start ================ */
+.about_body_part {
+    background: #61A734;
+    padding: 85px 100px 0px;
+}
+
+.about_body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.about_body .about_text h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.about_body .about_text p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.about_body .about_card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.about_card .card_item {
+    background: #fff;
+    padding: 53px 44px 53px 20px;
+}
+
+.about_card .card_item h1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #61A734;
+    margin-bottom: 25px;
+}
+
+.about_card .card_item p {
+    color: #2f3542;
+}
+
+#about_photo_part {
+    background: #F2F2F2;
+    padding-bottom: 72px;
+}
+
+.about_photo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    padding: 0 100px;
+}
+
+.about_photo .photo_item img {
+    width: 264px;
+}
+
+/* --------------- about part end ----------------- */
+/* =============== photo mask part start ================= */
+
+#photo_mask_section {
+    background: #E3EFFB;
+    padding: 30px 100px;
+}
+
+.photo_mask {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.photo_mask .mask_card {
+    background: #fff;
+    padding: 30px 45px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.photo_mask .mask_card img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.photo_mask .mask_card h1 {
+    font-size: 25px;
+    font-weight: 300;
+    color: #2f3542;
+    margin: 25px 0;
+}
+
+.photo_mask .mask_card p {
+    font-size: 17px;
+    line-height: 20px;
+    color: #2f3542;
+    margin-bottom: 25px;
+}
+
+.photo_mask .mask_card a {
+    font-size: 16px;
+    color: #2f3542;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid #2f3542;
+}
+
+.photo_mask .mask_card a:hover {
+    color: #61A734;
+}
+
+/* -------------- photo mask part end --------------- */
+/* ============= footer part start ===================== */
+
+#footer_section {
+    background: #E3EFFB;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    text-align: center;
+}
+
+.footer .footer_logo img {
+    width: 200px;
+}
+
+.footer_manu ul {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer_manu ul li {
+    float: left;
+    margin: 20px;
+}
+
+.footer_manu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #2f3542;
+    font-weight: 700;
+    position: relative;
+}
+
+.footer_manu ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #61A734;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    transition: all linear .5s;
+}
+
+.footer_manu ul li a:hover::after {
+    width: 100%;
+}
+
+.footer_icon i {
+    font-size: 25px;
+    margin: 0 5px;
+    color: #2f3542;
+    transition: all linear .5s;
+}
+
+.footer_icon i:hover {
+    color: #61A734;
+}
+
+.footer .copyright p {
+    font-size: 16px;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* -------------------- footer part end ----------------- */
+/* ================ responsive part start ================= */
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+
+    #banner .banner .banner_item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner_item .text {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .banner_item .text p {
+        text-align: center;
+    }
+
+    #Works_section {
+        padding: 0;
+    }
+
+    #Works_section .work {
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .farm {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .farm_texts {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .about_body_part {
+        background: #61A734;
+        padding: 20px;
+    }
+
+    .about_body .about_card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .about_card .card_item {
+        background: #fff;
+        padding: 10px;
+    }
+
+    .about_body .about_text h1 {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .about_body .about_text p {
+        color: #fff;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    #about_photo_part {
+        padding-bottom: 0;
+    }
+
+    .about_photo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        padding: 0 20px;
+    }
+
+    .about_photo .photo_item img {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+
+    #photo_mask_section {
+        background: #E3EFFB;
+        padding: 30px 20px;
+    }
+
+    .photo_mask {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    #manu_section {
+        width: 100%;
+        height: 80px;
+        padding: 0px 10px;
+    }
+
+    .manu_bar .fa-bars {
+        display: block;
+        line-height: 80px;
+        text-align: right;
+        color: #2f3542;
+    }
+
+    .nav_item {
+        position: absolute;
+        width: 100%;
+        background: #2f3542;
+        display: none;
+    }
+
+    .nav_item nav ul {
+        float: none;
+    }
+
+    .nav_item nav ul li {
+        float: none;
+        text-align: center;
+    }
+
+    .nav_item nav ul li a {
+        color: #fff;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+/* ------------------ responsive part end ----------------- */
