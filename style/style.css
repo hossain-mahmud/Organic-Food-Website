@@ -453,13 +453,13 @@ body {
     .container {
         width: 100%;
     }
-     #manu_section {
+     #menu_section {
         width: 100%;
         height: 80px;
         padding: 0px 10px;
     }
 
-    .manu_bar .fa-bars {
+    .menu_bar .fa-bars {
         display: block;
         line-height: 80px;
         text-align: right;
