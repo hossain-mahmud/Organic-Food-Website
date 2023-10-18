@@ -19,7 +19,9 @@ ol,
 li {
     list-style: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Mukta', sans-serif;
 }
