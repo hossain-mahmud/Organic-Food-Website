@@ -320,7 +320,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px;
-    padding: 0 100px;
 }
 
 .about_photo .photo_item img {
